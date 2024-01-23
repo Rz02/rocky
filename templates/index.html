@@ -1,3 +1,4 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,25 +6,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <title>Rocky Zhao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha384-rnsxF7Wf2LhqT++NqZDLgFTlpYir4LgklLbuqs4ooGl2M+sIIXA7Mn6u2UfoXfeP" crossorigin="anonymous">
+    <title>Your Name - Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>Rocky</h1>
-        <p>Interdisciplinarian</p>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Web Developer</p>
+        </div>
     </header>
 
     <section class="about-me">
-        <h2>About Me</h2>
-        <p>This is my story. I am a normal person who grows up with my dream.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate web developer...</p>
+        </div>
     </section>
 
-    <!-- Add more sections as needed -->
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                    <div class="project-picture">
+                        <img src="{{ url_for('static', filename='project_1.png') }}" alt="Project 1">
+                        <div class="project-details">
+                            <h3>Project 1</h3>
+                            <p>Description of Project 1.</p>
+                        </div>
+                    </div>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                    <div class="project-picture">
+                        <img src="{{ url_for('static', filename='project_1.png') }}" alt="Project 2">
+                        <div class="project-details">
+                            <h3>Project 2</h3>
+                            <p>Description of Project 2.</p>
+                        </div>
+                    </div>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>Contact: rockyzhao02@gmail.com</p>
-    </footer>
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out!</p>
+            <div class="social-icons">
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <!-- Add more social icons as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="{{ url_for('static', filename='selfie.jpg') }}" alt="Your Name">
+            </div>
+            <div class="footer-content">
+                <p>Contact: your.email@example.com</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <!-- Add more social icons as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
