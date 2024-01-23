@@ -1,15 +1,29 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask and React Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Rocky Zhao</title>
 </head>
 
 <body>
-    <div id="root"></div>
+    <header>
+        <h1>Rocky</h1>
+        <p>Interdisciplinarian</p>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>This is my story. I am a normal person who grows up with my dream.</p>
+    </section>
+
+    <!-- Add more sections as needed -->
+
+    <footer>
+        <p>Contact: rockyzhao02@gmail.com</p>
+    </footer>
 </body>
 
 </html>
